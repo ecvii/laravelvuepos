@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./app.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="invoice-page-wrapper">
+    <div class="thermal-invoice" >
+        <!--Invoice Header-->
+        <div class="text-center invoice-header general-text mb-3">
+
+            <!--Invoice Logo-->
+            {app_logo}
+            <div class="my-2">{app_name}</div>
+            <div class="my-2">
+                <span class="text-uppercase font-weight-bold">Sales Invoice</span>
+            </div>
+            <small>
+                {date} - {time}
+            </small>
+        </div>
+
+        <!--Invoice Info-->
+        <div class="mb-3 general-text invoice-info">
+            <p>
+                <span>Invoice ID: {invoice_id}</span>
+            </p>
+            <p>
+                <span>Sold To: {customer_name}</span>
+            </p>
+            <p>
+                <span>Sold By: {employee_name}</span>
+            </p>
+            <p>
+                <span>Phone: {phone_number}</span>
+            </p>
+            <p>
+                <span>Address: {address}</span>
+            </p>
+            <p>
+                <span>TIN: {tin}</span>
+            </p>
+            <p>
+                <span>Note: {note}</span>
+            </p>
+        </div>
+
+        <!--Invoice Body-->
+        <table class="table table-borderless">
+            <tbody class="font-weight-bold general-text">
+            <tr class="border-top border-bottom t-header">
+                <th class="w-25 pl-0">Price</th>
+                <th class="text-right">Qty</th>
+                <th class="text-right">Disc%</th>
+                <th class="text-right pr-0">Total</th>
+            </tr>
+            <tr><td>{item_details}</td></tr>
+            <tr class="t-footer border-top">
+                <td class="text-left">Subtotal</td>
+                <td class="font-weight-bold" colspan="3">{sub_total}</td>
+            </tr>
+            <tr class="t-footer">
+                <td class="text-left">Shipment</td>
+                <td class="font-weight-bold" colspan="3">{shipment_amount}</td>
+            </tr>
+            <tr class="t-footer">
+                <td class="text-left">Tax</td>
+                <td class="font-weight-bold" colspan="3">{tax}</td>
+            </tr>
+            <tr class="t-footer">
+                <td class="text-left">Discount</td>
+                <td class="font-weight-bold" colspan="3">{discount}</td>
+            </tr>
+            <tr class="t-footer">
+                <td class="text-left">Total</td>
+                <td class="font-weight-bold" colspan="3">{total}</td>
+            </tr>
+            <tr><td>{payment_details}</td></tr>
+            <tr class="t-footer">
+                <td class="text-left">Exchange</td>
+                <td class="font-weight-bold" colspan="3">{exchange}</td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="shipment-address general-text">{shipment_address}</div>
+        <div class="text-center barcode">{barcode}</div>
+    </div>
+</div>
+</body>
+</html>

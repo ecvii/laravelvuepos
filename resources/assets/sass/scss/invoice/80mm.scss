@@ -1,0 +1,197 @@
+.invoice-page-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    .thermal-invoice {
+      font-size: 0.8rem !important;
+      font-family: 'DejaVu Sans', Lato, sans-serif !important;
+      .invoice-header {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        img{
+          width: 100% !important;
+        }
+        .app-name {
+          font-size: 1.25rem !important;
+          font-weight: bold;
+        }
+      }
+      .invoice-header {
+        .invoice-type {
+        }
+      }
+  
+      .invoice-header {
+        .invoice-date {
+          font-size: 0.85rem !important;
+        }
+      }
+  
+      .invoice-info{
+        p{
+          margin-bottom: 1mm;
+          span{
+            font-weight: bold;
+          }
+        }
+      }
+  
+      table {
+        &.table {
+          width: 100%;
+            tr {
+              th {
+                border-bottom: 1px dashed #4b4b4b !important;
+                padding: 0.5rem;
+                text-align: right;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                &:first-child {
+                    padding-left: 0;
+                    text-align: left;
+                  }
+    
+                  &:last-child {
+                    padding-right: 0;
+                  }
+              }
+            }
+
+  
+          tbody {
+            tr {
+              td {
+                padding: 0.5rem;
+                padding-top: 0.2rem;
+                padding-bottom: 0.2rem;
+                background-color: #fbfbfb;
+                &:first-child {
+                  padding-left: 0;
+                }
+  
+                &:last-child {
+                  padding-right: 0;
+                }
+              }
+            }
+          }
+  
+          tr {
+            &.t-footer {
+              th, td {
+                padding: 0.5rem;
+                padding-top: 0.2rem;
+                padding-bottom: 0.2rem;
+  
+                &:first-child {
+                  padding-left: 0;
+                }
+  
+                &:last-child {
+                  padding-right: 0;
+                }
+              }
+  
+              td {
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .pos{
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+    font-family: 'DejaVu Sans', Lato, sans-serif !important;
+    &__item{
+      &--header{
+        display: flex;
+        flex-direction: column;
+        row-gap: .5rem;
+        & img{
+          width: 100%;
+        }
+        &__title{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        &__info{
+          font-weight: 500;
+          font-size: small;
+        }
+        & small {
+          font-size: x-small;
+        }
+      }
+      &--body{
+        &__content{
+          & table{
+            font-size: smaller;
+            width: 100%;
+            & thead{
+              & th{
+                text-align: right;
+                padding: .5rem 0;
+                border-bottom: 1px dashed #666;
+              }
+              & th:first-child{
+                text-align: left;
+              }
+            }
+            & tbody{
+              & tr {
+                & td{
+                  text-align: right;
+                  background-color: #f8f8f8;
+                }
+                & td:first-child {
+                  text-align: left;
+                }
+                & .dis {
+                  padding: 0 .5rem !important;
+                }
+              }
+            }
+          }
+          font-size: small;
+          &__title{
+            display: flex;
+            justify-content: space-between;
+          }
+          &__body{}
+        }
+      }
+      &--footer{
+        & .shipment-address{
+          font-size: small;
+        }
+      }
+    }
+    & .dashed-separator {
+      border-top: 1px dashed #666;
+      height: 10px;
+    }
+    & * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    & .barcode{
+      margin: 10px 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      & img{
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+

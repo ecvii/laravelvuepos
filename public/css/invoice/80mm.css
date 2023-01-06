@@ -1,0 +1,222 @@
+.invoice-page-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.invoice-page-wrapper .thermal-invoice {
+  font-size: 0.8rem !important;
+  font-family: 'DejaVu Sans', Lato, sans-serif !important;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-header img {
+  width: 100% !important;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-header .app-name {
+  font-size: 1.25rem !important;
+  font-weight: bold;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-header .invoice-date {
+  font-size: 0.85rem !important;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-info p {
+  margin-bottom: 1mm;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-info p span {
+  font-weight: bold;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table {
+  width: 100%;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr th {
+  border-bottom: 1px dashed #4b4b4b !important;
+  padding: 0.5rem;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr th:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr th:last-child {
+  padding-right: 0;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tbody tr td {
+  padding: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  background-color: #fbfbfb;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tbody tr td:first-child {
+  padding-left: 0;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tbody tr td:last-child {
+  padding-right: 0;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer th,
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer td {
+  padding: 0.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer th:first-child,
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer td:first-child {
+  padding-left: 0;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer th:last-child,
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer td:last-child {
+  padding-right: 0;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer td {
+  text-align: right;
+}
+
+.pos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: .5rem;
+  font-family: 'DejaVu Sans', Lato, sans-serif !important;
+}
+
+.pos__item--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: .5rem;
+}
+
+.pos__item--header img {
+  width: 100%;
+}
+
+.pos__item--header__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.pos__item--header__info {
+  font-weight: 500;
+  font-size: small;
+}
+
+.pos__item--header small {
+  font-size: x-small;
+}
+
+.pos__item--body__content {
+  font-size: small;
+}
+
+.pos__item--body__content table {
+  font-size: smaller;
+  width: 100%;
+}
+
+.pos__item--body__content table thead th {
+  text-align: right;
+  padding: .5rem 0;
+  border-bottom: 1px dashed #666;
+}
+
+.pos__item--body__content table thead th:first-child {
+  text-align: left;
+}
+
+.pos__item--body__content table tbody tr td {
+  text-align: right;
+  background-color: #f8f8f8;
+}
+
+.pos__item--body__content table tbody tr td:first-child {
+  text-align: left;
+}
+
+.pos__item--body__content table tbody tr .dis {
+  padding: 0 .5rem !important;
+}
+
+.pos__item--body__content__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pos__item--footer .shipment-address {
+  font-size: small;
+}
+
+.pos .dashed-separator {
+  border-top: 1px dashed #666;
+  height: 10px;
+}
+
+.pos * {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.pos .barcode {
+  margin: 10px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.pos .barcode img {
+  width: 80%;
+  margin: 0 auto;
+}
+

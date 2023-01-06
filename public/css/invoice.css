@@ -1,0 +1,91 @@
+.invoice-page-wrapper {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.invoice-page-wrapper .thermal-invoice {
+  font-size: 12px !important;
+  font-weight: bold;
+  font-family: 'DejaVu Sans', Lato, sans-serif !important;
+  margin: 0 auto;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-header img {
+  width: 100% !important;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-header .app-name {
+  font-size: 25px !important;
+  font-weight: bold;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-header .invoice-type {
+  font-size: 20px !important;
+  font-weight: bold;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-header .invoice-date {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-info p {
+  margin-bottom: 1px;
+}
+
+.invoice-page-wrapper .thermal-invoice .invoice-info p span {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table .t-header tr th {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tbody tr td {
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tbody tr td:first-child {
+  padding-left: 0;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tbody tr td:last-child {
+  padding-right: 0;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer th,
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer td {
+  border: 0 !important;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer th:first-child,
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer td:first-child {
+  padding-left: 0;
+  text-align: left;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer th:last-child,
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer td:last-child {
+  padding-right: 0;
+}
+
+.invoice-page-wrapper .thermal-invoice table.table tr.t-footer td {
+  text-align: right;
+}
+
