@@ -1,6 +1,6 @@
 # Laravel POS
 
-## A project in IT315 with Sir Antonio Piloton
+## A project requirement
 
 ### Tools used:
   * Laravel PHP framework
